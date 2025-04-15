@@ -29,7 +29,7 @@
 }
 
 .head_logo {
-  margin: 0 10px;
+  margin: 0 10px 0 0;
   background-color: #fff;
   box-shadow: 0 0 7px 1px #666666;
   height: 66px;
@@ -49,8 +49,12 @@
 }
 
 .promotion_img {
-    margin: 6px 0 6px 7px ;
+  margin: 6px 0 6px 7px;
   /* padding-left: 7px; */
+}
+
+.main_nav{
+  border-bottom: 2px solid #f0f0f0;
 }
 
 nav {
@@ -59,7 +63,93 @@ nav {
   height: 87px;
   background-color: #fff;
 }
-.main_nav_container {
-  background-color: #fff;
-  margin-left: 10px;
+
+.main_nav_container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main_nav_container ul li {
+  flex: 1;
+  text-align: center;
+  color: #666666;
+  height: 87px;
+  position: relative;
+  line-height: 1;
+}
+
+.main_nav_container ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.main_nav_container .fill {
+  position: absolute;
+  bottom: -06px;
+  left: 0;
+  height: 6px;
+  width: 100%;
+}
+
+.title {
+  margin: 7px 0;
+}
+
+.home .fill {
+  background-color: #666666;
+  border-bottom-left-radius: 8px;
+}
+.explore .fill {
+  background-color: #e3350d;
+}
+.watch .fill {
+  background-color: #ee6b2f;
+}
+.play .fill {
+  background-color: #e6bc2f;
+}
+.attend .fill {
+  background-color: #4dad5b;
+}
+.trade .fill {
+  background-color: #30a7d7;
+}
+.news .fill {
+  background-color: #1b53ba;
+  border-bottom-right-radius: 08px;
+}
+
+.home svg,
+.home .title,
+li.home {
+  color: #fff;
+  background-color: #666666;
+}
+
+li.explore:hover {
+  background-color: #e3350d;
+  color: #fff;
+}
+li.watch:hover {
+  background-color: #ee6b2f;
+  color: #fff;
+}
+li.play:hover {
+  background-color: #e6bc2f;
+  color: #fff;
+}
+li.attend:hover {
+  background-color: #4dad5b;
+  color: #fff;
+}
+li.trade:hover {
+  background-color: #30a7d7;
+  color: #fff;
+}
+li.news:hover {
+  background-color: #1b53ba;
+  color: #fff;
 }
