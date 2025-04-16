@@ -2,13 +2,20 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
 }
+
+body {
+  background: #424242
+    url("https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png");
+}
+/* Header */
+
 .main_head_cont {
   height: 66px;
   position: relative;
   width: 100%;
   background-image: url("https://assets.pokemon.com/static2/_ui/img/gus/bg-strip.jpg");
-  /* background-repeat: repeat-x; */
   z-index: 16;
 }
 
@@ -53,8 +60,11 @@
   /* padding-left: 7px; */
 }
 
-.main_nav{
+/* Header Navigation */
+
+.main_nav {
   border-bottom: 2px solid #f0f0f0;
+  background: #fff;
 }
 
 nav {
@@ -67,7 +77,6 @@ nav {
 .main_nav_container ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .main_nav_container ul li {
@@ -152,4 +161,113 @@ li.trade:hover {
 li.news:hover {
   background-color: #1b53ba;
   color: #fff;
+}
+
+/* Header End */
+
+/* section one */
+
+.section_one {
+  background: #fff;
+  width: 60%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 35px 15px 16px 15px;
+  display: flex;
+  gap: 18px;
+  overflow-x: hidden;
+}
+.section_one img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px 5px 0 0;
+}
+
+.sec_1_column_1 {
+  width: 70%;
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sec_1_column_1 .row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.sec_1_column_1 .row a {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+}
+
+.sec_1_column_2 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sec_1_column_2 a {
+  width: 100%;
+}
+
+.banner_blue,
+.banner_gray,
+.banner_green,
+.banner_lightblue,
+.banner_lightpurple,
+.banner_yellow {
+  border-radius: 0 0 5px 5px;
+}
+
+.banner_lightblue {
+  background-color: #30a7d7;
+  padding: 4px 0 24px 0;
+}
+
+.banner_lightblue h3 {
+  color: #fff;
+  font-family: "Flexo-Medium", Arial, sans-serif;
+  font-size: 22px;
+  margin: 16.5px 11px 0 22px;
+}
+.banner_lightblue p {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #0a2631;
+  font-size: 16px;
+  margin: 8px 8px 12px 20px;
+}
+
+.banner_green {
+  background-color: #4dad5b;
+  /* padding: 16.5px 11px 16.5px 22px; */
+  /* margin-bottom: -5px; */
+}
+
+.banner_green h3 {
+  /* width: 100%; */
+  margin: 16.5px 11px 16.5px 22px;
+background-color: #4dad5b;
+  color: #fff;
+  font-family: "Flexo-Medium", Arial, sans-serif;
+  font-size: 22px;
+}
+.banner_lightpurple {
+  background-color: #b38aea;
+}
+
+.banner_yellow {
+  background-color: #e6bc2f;
+}
+
+.banner_blue {
+  background-color: #1b53ba;
+}
+.banner_gray {
+  background-color: #a4a4a4;
 }
