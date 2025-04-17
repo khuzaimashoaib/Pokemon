@@ -1,3 +1,5 @@
+@import url(https://db.onlinewebfonts.com/c/d2d21cf0ee4c1d969d8a4dccc587ab26?family=Flexo-Medium);
+
 * {
   margin: 0;
   padding: 0;
@@ -10,15 +12,11 @@ body {
     url("https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png");
 }
 
-/* .container { */
-  /* max-width: 1024px; */
-  /* margin: 0 auto;} */
 /* Header */
 
 .main_head_cont {
   height: 66px;
   position: relative;
-  /* max-width: 1024px; */
   width: 100%;
   background-image: url("https://assets.pokemon.com/static2/_ui/img/gus/bg-strip.jpg");
   z-index: 16;
@@ -172,9 +170,16 @@ li.news:hover {
 
 /* section one */
 
+.section_wrapper {
+  background: #fff
+    url("https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png");
+  margin: 0 auto;
+  width: 85%;
+}
+
 .section_one {
   background: #fff;
-  width: 60%;
+  width: 70%;
   max-width: 1024px;
   margin: 0 auto;
   padding: 35px 15px 16px 15px;
@@ -222,7 +227,6 @@ li.news:hover {
 }
 
 .banner_blue,
-.banner_gray,
 .banner_green,
 .banner_lightblue,
 .banner_lightpurple,
@@ -231,7 +235,7 @@ li.news:hover {
 }
 
 .banner_lightblue {
-  background-color: #30a7d7;
+  background-color: #1b53ba;
   padding: 4px 0 24px 0;
 }
 
@@ -239,40 +243,74 @@ li.news:hover {
   color: #fff;
   font-family: "Flexo-Medium", Arial, sans-serif;
   font-size: 22px;
+  font-weight: 500;
   margin: 16.5px 11px 0 22px;
 }
 .banner_lightblue p {
   font-family: "Roboto", Arial, sans-serif;
-  color: #0a2631;
+  color: #30a7d7;
   font-size: 16px;
   margin: 8px 8px 12px 20px;
 }
-
-.banner_green {
-  background-color: #4dad5b;
-  /* padding: 16.5px 11px 16.5px 22px; */
-  /* margin-bottom: -5px; */
+.banner_green_container {
+  background-color: #ff90c4;
+  height: 100%;
+  border-radius: 5px;
+}
+.banner_yellow_container {
+  height: 100%;
+  background-color: #313131;
+  border-radius: 5px;
+}
+.banner_lightpurple_container {
+  height: 100%;
+  background-color: #30a7d7;
+  border-radius: 5px;
 }
 
+.banner_blue h3,
+.banner_lightpurple h3,
+.banner_yellow h3,
+.banner_gray h3,
 .banner_green h3 {
-  /* width: 100%; */
+  /* padding-bottom: 5px; */
   margin: 16.5px 11px 16.5px 22px;
-background-color: #4dad5b;
   color: #fff;
   font-family: "Flexo-Medium", Arial, sans-serif;
   font-size: 22px;
-}
-.banner_lightpurple {
-  background-color: #b38aea;
+  font-weight: 500;
 }
 
 .banner_yellow {
-  background-color: #e6bc2f;
+  background-color: #313131;
 }
 
-.banner_blue {
-  background-color: #1b53ba;
+.banner_blue_container {
+  height: 100%;
+  background-color: #b38aea;
+  border-radius: 5px;
 }
+
+.banner_gray_container {
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.banner_image {
+  width: 40%;
+}
+
+.banner_image img {
+  max-width: 132px;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 0;
+
+}
+
 .banner_gray {
-  background-color: #a4a4a4;
+  width: 60%;
+  background-color: rgb(230 188 47);
 }
