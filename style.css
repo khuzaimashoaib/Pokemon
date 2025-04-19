@@ -390,28 +390,7 @@ li.news:hover {
   margin-top: 0.5rem;
   align-items: center;
 }
-body.custom-form-elements input[type="email"],
-body.custom-form-elements input[type="text"],
-body.custom-form-elements input[type="text"] {
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: "Flexo-Medium", arial, sans-serif;
-  background-color: #313131;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  display: block;
-  font-size: 100%;
-  font-family: "Roboto", arial, sans-serif;
-  line-height: 1.5;
-  padding: 0.5em 0;
-  text-indent: 0.5em;
-  width: 100%;
-  height: auto;
-}
+
 
 .global-footer-email .footer-email-notification-options .footer-email-checkbox {
   appearance: auto;
@@ -434,14 +413,9 @@ body.custom-form-elements input[type="text"] {
 }
 input[type="submit"],
 input[type="reset"] {
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  appearance: none;
+  
   border: none;
   text-align: center;
-  cursor: pointer;
 }
 .footer-email-link {
   color: white;
@@ -521,11 +495,13 @@ input[type="reset"] {
   width: 85.49%;
   margin-left: 7.2525%;
 }
-.global-footer .find-us a,
-.global-footer .add-this a {
-  background-image: url("https://assets.pokemon.com/static2/_ui/img/footer/social-icons.png");
+ .find-us a {
   height: 34px;
   width: 35px;
+  margin:0 0.4em 0.5em 0;
+}
+.find-us img {
+  border-radius: 5px;
 }
 .global-footer-legal {
   margin-left: 65.2925%;
