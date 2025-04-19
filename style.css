@@ -30,8 +30,8 @@ body {
 
 .header_inner_container {
   margin: 0 auto;
-  max-width: 1200px;
-  width: 60%;
+  max-width: 913px;
+  /* width: 60%; */
 }
 .header_inner_container ul {
   display: flex;
@@ -39,10 +39,10 @@ body {
 }
 
 .head_logo {
-  margin: 0 10px 0 0;
+  margin-right: 10px;
   background-color: #fff;
   box-shadow: 0 0 7px 1px #666666;
-  height: 66px;
+  height: 64px;
   padding: 0px 10px 0px 10px;
   display: flex;
   align-items: center;
@@ -75,6 +75,9 @@ nav {
   width: 60%;
   height: 87px;
   background-color: #fff;
+}
+.main_nav_container {
+  max-width: 895px;
 }
 
 .main_nav_container ul {
@@ -175,12 +178,13 @@ li.news:hover {
     url("https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png");
   margin: 0 auto;
   width: 85%;
+  max-width: 1280px;
 }
 
 .section_one {
   background: #fff;
-  width: 70%;
-  max-width: 1024px;
+  width: 100%;
+  max-width: 895px;
   margin: 0 auto;
   padding: 35px 15px 16px 15px;
   display: flex;
@@ -307,10 +311,243 @@ li.news:hover {
   width: 100%;
   height: 100%;
   border-top-right-radius: 0;
-
 }
 
 .banner_gray {
   width: 60%;
   background-color: rgb(230 188 47);
 }
+
+/* Section One End  */
+
+/* Footer Start  */
+
+.global-footer {
+  background: #1f1f1f;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 1em;
+  width: 100%;
+}
+.global-footer-email {
+  font-family: "Roboto", arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 850px;
+  max-width: 1024px;
+  margin: 4rem auto 2rem auto;
+  color: white;
+}
+.global-footer-email .footer-email-title {
+  font-weight: bold;
+  font-size: 135%;
+  color: white;
+  margin-bottom: 0;
+}
+.global-footer-email .footer-email-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.global-footer-email .footer-email-form {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.global-footer-email .footer-email-form .footer-white-box {
+  background-color: white !important;
+  color: grey !important;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  text-indent: 0.5em;
+  height: 40px;
+  width: 100%;
+}
+.global-footer-email .footer-email-form .region_dob_wrap {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+}
+
+.global-footer-email .footer-email-notification-options {
+  width: 48%;
+}
+.global-footer-email .footer-email-notification-options .email_msg {
+  margin-top: 0;
+  color: white;
+}
+
+.global-footer-email
+  .footer-email-notification-options
+  .footer-email-checkbox-wrapper-1 {
+  display: flex;
+  column-gap: 1rem;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+body.custom-form-elements input[type="email"],
+body.custom-form-elements input[type="text"],
+body.custom-form-elements input[type="text"] {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Flexo-Medium", arial, sans-serif;
+  background-color: #313131;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 100%;
+  font-family: "Roboto", arial, sans-serif;
+  line-height: 1.5;
+  padding: 0.5em 0;
+  text-indent: 0.5em;
+  width: 100%;
+  height: auto;
+}
+
+.global-footer-email .footer-email-notification-options .footer-email-checkbox {
+  appearance: auto;
+  position: relative;
+  opacity: 1;
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  min-height: 25px;
+}
+.global-footer-email .footer-email-sumbit {
+  width: 10rem;
+  height: 4rem;
+  font-size: 100%;
+  font-weight: bold;
+  color: white;
+  background-color: grey;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
+input[type="submit"],
+input[type="reset"] {
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+.footer-email-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.global-footer .content-wrapper {
+  background: #1f1f1f;
+}
+.content-wrapper,
+.section {
+  /* background: transparent url("../img/chrome/content_bg.png") left top; */
+  /* background-size: 100% 1px; */
+  /* display: block; */
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1024px;
+  width: 100%;
+}
+.global-footer-links {
+  margin-left: 7.2525%;
+}
+.global-footer-links,
+.global-footer-social,
+.global-footer-legal {
+  float: left;
+  margin-right: -100%;
+  width: 27.46%;
+  border-right: 2px solid #000;
+  margin-top: 1.75em;
+}
+.global-footer-links h2 {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  font-size: 137.5%;
+  color: white;
+  line-height: 125%;
+  margin: 0 0.4em 0.8em 0.4em;
+  width: 100%;
+  padding-left: 5px;
+}
+.global-footer-links li {
+  font-family: "Flexo-Medium", arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0 0 0.5em 0.5em;
+  padding-left: 0.5em;
+  position: relative;
+  text-decoration: none;
+}
+.global-footer-legal li a,
+.global-footer-links li a {
+  color: #fff;
+}
+.global-footer-legal .footer-legal-wrapper ul li {
+  clear: both;
+  float: left;
+  padding: 0.5em 0;
+}
+.global-footer-legal .footer-legal-wrapper span {
+  color: #fff;
+  clear: both;
+  display: block;
+  padding-top: 5px;
+}
+.global-footer-legal:last-child {
+  border: 0;
+}
+
+.global-footer-social {
+  margin-left: 36.2725%;
+}
+.global-footer-social .footer-social-wrapper {
+  float: left;
+  margin-right: -100%;
+  width: 85.49%;
+  margin-left: 7.2525%;
+}
+.global-footer .find-us a,
+.global-footer .add-this a {
+  background-image: url("https://assets.pokemon.com/static2/_ui/img/footer/social-icons.png");
+  height: 34px;
+  width: 35px;
+}
+.global-footer-legal {
+  margin-left: 65.2925%;
+}
+.global-footer-legal .footer-legal-wrapper {
+  float: left;
+  margin-right: -100%;
+  width: 85.49%;
+  margin-left: 7.2525%;
+  font-family: "Flexo-Regular", arial, sans-serif;
+  color: #525252;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 68.8%;
+}
+.global-footer-legal .footer-legal-wrapper #footer--privacy {
+  display: flex;
+  flex-direction: column;
+}
+
+.global-footer-legal .footer-legal-wrapper #footer--privacy > a {
+  background: url("https://assets.pokemon.com/static2/_ui/img/footer/thepokemoncompanyinternational-seal-1596150491.png")
+    no-repeat;
+  flex: 0 0 60px;
+}
+
