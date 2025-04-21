@@ -16,10 +16,11 @@ body {
 
 .main_head_cont {
   height: 66px;
-  position: relative;
+  /* position: fixed; */
+  /* top: 0; */
   width: 100%;
   background-image: url("https://assets.pokemon.com/static2/_ui/img/gus/bg-strip.jpg");
-  z-index: 16;
+  z-index: 16;  
 }
 
 .header_container {
@@ -66,8 +67,10 @@ body {
 /* Header Navigation */
 
 .main_nav {
+  display: flex;
   border-bottom: 2px solid #f0f0f0;
   background: #fff;
+  
 }
 
 nav {
@@ -78,6 +81,7 @@ nav {
 }
 .main_nav_container {
   max-width: 895px;
+  
 }
 
 .main_nav_container ul {
@@ -391,7 +395,6 @@ li.news:hover {
   align-items: center;
 }
 
-
 .global-footer-email .footer-email-notification-options .footer-email-checkbox {
   appearance: auto;
   position: relative;
@@ -413,7 +416,6 @@ li.news:hover {
 }
 input[type="submit"],
 input[type="reset"] {
-  
   border: none;
   text-align: center;
 }
@@ -495,10 +497,10 @@ input[type="reset"] {
   width: 85.49%;
   margin-left: 7.2525%;
 }
- .find-us a {
+.find-us a {
   height: 34px;
   width: 35px;
-  margin:0 0.4em 0.5em 0;
+  margin: 0 0.4em 0.5em 0;
 }
 .find-us img {
   border-radius: 5px;
@@ -526,4 +528,3 @@ input[type="reset"] {
     no-repeat;
   flex: 0 0 60px;
 }
-
