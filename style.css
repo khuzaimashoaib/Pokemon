@@ -31,8 +31,8 @@ body {
 
 .header_inner_container {
   margin: 0 auto;
-  max-width: 913px;
-  /* width: 60%; */
+  max-width: 895px;
+  width: 100%;
 }
 .header_inner_container ul {
   display: flex;
@@ -70,19 +70,21 @@ body {
   display: flex;
   border-bottom: 2px solid #f0f0f0;
   background: #fff;
+  height: 87px;
   
 }
 
 nav {
-  margin: 0 auto;
-  width: 60%;
-  height: 87px;
-  background-color: #fff;
-}
-.main_nav_container {
   max-width: 895px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
   
 }
+/* .main_nav_container {
+   max-width: 895px; 
+  
+ } */
 
 .main_nav_container ul {
   display: flex;
