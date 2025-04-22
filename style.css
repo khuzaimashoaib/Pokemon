@@ -20,7 +20,7 @@ body {
   /* top: 0; */
   width: 100%;
   background-image: url("https://assets.pokemon.com/static2/_ui/img/gus/bg-strip.jpg");
-  z-index: 16;  
+  z-index: 16;
 }
 
 .header_container {
@@ -71,7 +71,6 @@ body {
   border-bottom: 2px solid #f0f0f0;
   background: #fff;
   height: 87px;
-  
 }
 
 nav {
@@ -79,7 +78,6 @@ nav {
   margin: 0 auto;
   width: 100%;
   background-color: #fff;
-  
 }
 /* .main_nav_container {
    max-width: 895px; 
@@ -126,6 +124,7 @@ nav {
 .explore .fill {
   background-color: #e3350d;
 }
+
 .watch .fill {
   background-color: #ee6b2f;
 }
@@ -135,6 +134,7 @@ nav {
 .attend .fill {
   background-color: #4dad5b;
 }
+.light_blue_l,
 .trade .fill {
   background-color: #30a7d7;
 }
@@ -177,6 +177,78 @@ li.news:hover {
 
 /* Header End */
 
+/* Sign Up Button */
+
+#user-dashboard > div > nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid #2c2c2c;
+  border-top-right-radius: 20px;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 0 100%);
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+#user-dashboard .drawer {
+  position: fixed;
+  /* top: 155px; */
+  left: 120px;
+  width: 60px;
+  height: 100%;
+}
+
+#user-dashboard .profile-nav {
+  background-color: #333;
+  margin-top: 1em;
+}
+
+#user-dashboard .sign-up {
+  background-color: #54b564;
+  text-align: center;
+  padding: 25px 0;
+  cursor: pointer;
+}
+
+#user-dashboard .sign-up a {
+  color: #fff;
+}
+
+#user-dashboard .avatar-icon-wrapper {
+  background-color: #4dad5b;
+  border-radius: 17px;
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#user-dashboard .avatar-icon {
+  width: 35px;
+  height: 35px;
+}
+
+#user-dashboard .sign-in-text-wrapper {
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+#user-dashboard .search {
+  background-color: #555;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+}
+
+/* Sign Up Button End */
+
 /* section one */
 
 .section_wrapper {
@@ -197,6 +269,7 @@ li.news:hover {
   gap: 18px;
   overflow-x: hidden;
 }
+.section_two img,
 .section_one img {
   width: 100%;
   max-width: 100%;
@@ -207,7 +280,6 @@ li.news:hover {
 
 .sec_1_column_1 {
   width: 70%;
-  /* flex: 1; */
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -256,11 +328,17 @@ li.news:hover {
   font-weight: 500;
   margin: 16.5px 11px 0 22px;
 }
+.sec_3_column_3 p,
+.sec_3_column_2 p,
+.sec_3_column_1 p,
 .banner_lightblue p {
   font-family: "Roboto", Arial, sans-serif;
-  color: #30a7d7;
   font-size: 16px;
   margin: 8px 8px 12px 20px;
+  height: 100%;
+}
+.banner_lightblue p {
+  color: #30a7d7;
 }
 .banner_green_container {
   background-color: #ff90c4;
@@ -324,7 +402,138 @@ li.news:hover {
   background-color: rgb(230 188 47);
 }
 
-/* Section One End  */
+/* Section One End */
+
+/* Section 3 Start  */
+
+.section_two {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-bottom: 64px;
+  padding-top: 16px;
+  position: relative;
+}
+
+.sec_3_column_1 {
+  margin-top: 65px;
+}
+
+.sec_3_column_2 {
+  margin-top: 15px;
+}
+
+.sec_3_column_3 {
+  margin-top: 35px;
+}
+.sec_3_column_2,
+.sec_3_column_1 {
+  width: 35%;
+  height: 100%;
+}
+
+.sec_3_column_3 {
+  width: 30%;
+  height: 100%;
+}
+
+.sec_3_column_3 h3,
+.sec_3_column_2 h3,
+.sec_3_column_1 h3 {
+  margin-bottom: 0;
+}
+.sec_3_column_3 div,
+.sec_3_column_2 div,
+.sec_3_column_1 div {
+  margin-bottom: 16px;
+}
+.column_2_title {
+  color: #919191;
+  font-size: 30px;
+  line-height: 125%;
+  font-weight: 400;
+  font-family: "Flexo-Medium", arial, sans-serif;
+}
+.column_2_title_div {
+  margin: 30px 0;
+}
+
+.yellow,
+.red,
+.pink,
+.orange,
+.purple,
+.light_blue {
+  padding-bottom: 8px;
+}
+
+.light_blue p {
+  color: #0a2631;
+}
+
+.purple {
+  background-color: #855ac9;
+}
+
+.purple p {
+  color: #212121;
+}
+.orange_l,
+.orange {
+  background-color: #ee6b2f;
+}
+
+.orange p {
+  color: #4b1c06;
+}
+.pink {
+  background-color: #ff90c4;
+}
+.pink p {
+  color: #c3005b;
+}
+.red {
+  background-color: #e3350d;
+}
+.red p {
+  color: #cccccc;
+}
+.yellow {
+  background-color: #e6bc2f;
+}
+.yellow p {
+  color: #212121;
+}
+
+.last_cont div {
+  margin-bottom: 0;
+}
+.last_cont {
+  border-radius: 5px;
+  overflow: hidden;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 25px),
+    calc(100% - 25px) 100%,
+    0 100%
+  );
+}
+.orange_l h2 {
+  color: #fff;
+  font-family: "Flexo-Medium", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 16.5px 11px 16.5px 22px;
+  height: 100%;
+}
+.light_blue_l p {
+  color: #0a2631;
+  padding: 8px 8px 16px 20px;
+  margin: 0;
+}
+
+/* Section 3 End */
 
 /* Footer Start  */
 
