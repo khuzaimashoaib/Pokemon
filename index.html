@@ -4,19 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Official Pokémon Website | Pokemon.com</title>
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
       href="https://assets.pokemon.com/static2/_ui/img/favicon.ico"
     />
-    <script
-      src="https://kit.fontawesome.com/ac99fb3e48.js"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <!-- Header -->
+      <!-- Header Start -->
       <header>
         <div class="main_head_cont">
           <div class="header_container">
@@ -79,8 +97,8 @@
           <nav>
             <div class="main_nav_container">
               <ul>
-                <li class="home">
-                  <a>
+                <li class="home active" style="background-color: #666666">
+                  <a href="./index.html">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="28"
@@ -96,7 +114,7 @@
                   </a>
                 </li>
                 <li class="explore">
-                  <a>
+                  <a href="./pages/pokedex.html">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="28"
@@ -113,7 +131,7 @@
                   </a>
                 </li>
                 <li class="watch">
-                  <a>
+                  <a href="./pages/pokemon-video-games.html">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="28"
@@ -129,7 +147,7 @@
                   </a>
                 </li>
                 <li class="play">
-                  <a>
+                  <a href="./pages/pokemon-tcg.html">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="28"
@@ -142,12 +160,12 @@
                       />
                     </svg>
 
-                    <span class="title title_home">Trending Card Game</span>
+                    <span class="title title_home">Trading Card Game</span>
                     <span class="fill"></span>
                   </a>
                 </li>
                 <li class="attend">
-                  <a>
+                  <a href="./pages/animation.html">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512"
@@ -165,7 +183,7 @@
                   </a>
                 </li>
                 <li class="trade">
-                  <a>
+                  <a href="./pages/play-pokemon.html">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -183,8 +201,8 @@
                   </a>
                 </li>
                 <li class="news">
-                  <a>
-                    <svg
+                  <a
+                    ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512"
                       width="28"
@@ -336,6 +354,297 @@
         </section>
       </div>
       <!-- Section 1 End  -->
+
+      <!-- Section 2 Start -->
+
+      <div class="section_wrapper section_3_wrapper">
+        <section class="section_one section_3">
+          <div class="feature_title">
+            <h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2a10 10 0 0 0-9.95 9H7a5 5 0 0 1 10 0h4.95A10 10 0 0 0 12 2zm0 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0 6a10 10 0 0 0 9.95-9H17a5 5 0 0 1-10 0H2.05A10 10 0 0 0 12 22z"
+                ></path>
+              </svg>
+              <span> Featured Pokémon </span>
+            </h3>
+          </div>
+        </section>
+        <div>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/135.png"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <div class="title-row">
+                    <h5 class="card-title">Jolteon</h5>
+                    <span>135</span>
+                  </div>
+                  <dl>
+                    <dt>Type</dt>
+                    <dd class="types">
+                      <span class="electric"> Electric </span>
+                    </dd>
+                    <dt>Abilities</dt>
+                    <dd class="abilities">
+                      <span class="ability-label">Volt Absorb</span>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/013.png"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <div class="title-row">
+                    <h5 class="card-title">Weedle</h5>
+                    <span>13</span>
+                  </div>
+                  <dl>
+                    <dt>Type</dt>
+                    <dd class="types">
+                      <span class="bug"> Bug </span>
+                      <span class="poison"> Poison </span>
+                    </dd>
+                    <dt>Abilities</dt>
+                    <dd class="abilities">
+                      <span class="ability-label">Shield Dust</span>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/665.png"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <div class="title-row">
+                    <h5 class="card-title">Spewpa</h5>
+                    <span>665</span>
+                  </div>
+                  <dl>
+                    <dt>Type</dt>
+                    <dd class="types">
+                      <span class="bug"> Bug </span>
+                    </dd>
+                    <dt>Abilities</dt>
+                    <dd class="abilities">
+                      <span class="ability-label">Shed Skin</span>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/473.png"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <div class="title-row">
+                    <h5 class="card-title">Mamoswine</h5>
+                    <span>473</span>
+                  </div>
+                  <dl>
+                    <dt>Type</dt>
+                    <dd class="types">
+                      <span class="ice"> Ice </span>
+                      <span class="ground"> Ground </span>
+                    </dd>
+                    <dt>Abilities</dt>
+                    <dd class="abilities">
+                      <span class="ability-label">Oblivious/Snow </span>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/114.png"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <div class="title-row">
+                    <h5 class="card-title">Tangela</h5>
+                    <span>114</span>
+                  </div>
+                  <dl>
+                    <dt>Type</dt>
+                    <dd class="types">
+                      <span class="grass"> Grass </span>
+                    </dd>
+                    <dt>Abilities</dt>
+                    <dd class="abilities">
+                      <span class="ability-label">Chlorophyll/Leaf Guard</span>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/578.png"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <div class="title-row">
+                    <h5 class="card-title">Duosion</h5>
+                    <span>578</span>
+                  </div>
+                  <dl>
+                    <dt>Type</dt>
+                    <dd class="types">
+                      <span class="psychic"> Psychic </span>
+                    </dd>
+                    <dt>Abilities</dt>
+                    <dd class="abilities">
+                      <span class="ability-label">Magic Guard / Overcoat</span>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/458.png"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <div class="title-row">
+                    <h5 class="card-title">Mantyke</h5>
+                    <span>458</span>
+                  </div>
+                  <dl>
+                    <dt>Type</dt>
+                    <dd class="types">
+                      <span class="water"> Water </span>
+                      <span class="flying"> Flying </span>
+                    </dd>
+                    <dt>Abilities</dt>
+                    <dd class="abilities">
+                      <span class="ability-label"
+                        >Water Absorb / Swift Swim</span
+                      >
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/146.png"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <div class="title-row">
+                    <h5 class="card-title">Moltres</h5>
+                    <span>146</span>
+                  </div>
+                  <dl>
+                    <dt>Type</dt>
+                    <dd class="types">
+                      <span class="fire"> Fire </span>
+                      <span class="flying"> Flying </span>
+                    </dd>
+                    <dt>Abilities</dt>
+                    <dd class="abilities">
+                      <span class="ability-label">Pressure</span>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/129.png"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <div class="title-row">
+                    <h5 class="card-title">Magikarp</h5>
+                    <span>129</span>
+                  </div>
+                  <dl>
+                    <dt>Type</dt>
+                    <dd class="types">
+                      <span class="water"> Water </span>
+                    </dd>
+                    <dt>Abilities</dt>
+                    <dd class="abilities">
+                      <span class="ability-label">Swift Swim</span>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/590.png"
+                  alt="Card image"
+                />
+                <div class="card-body">
+                  <div class="title-row">
+                    <h5 class="card-title">Foongus</h5>
+                    <span>590</span>
+                  </div>
+                  <dl>
+                    <dt>Type</dt>
+                    <dd class="types">
+                      <span class="grass"> Grass </span>
+                      <span class="poison"> Poison </span>
+                    </dd>
+                    <dt>Abilities</dt>
+                    <dd class="abilities">
+                      <span class="ability-label">Effect Spore</span>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section_one explore_more">
+          <div class="explore_more_container">
+            <h2>Explore More Pokémon</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2 End -->
 
       <!-- Section 3 Start -->
       <div class="section_wrapper">
@@ -673,5 +982,35 @@
       </footer>
       <!-- Footer End -->
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        dots: false,
+        margin: 0,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
