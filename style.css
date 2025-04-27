@@ -709,7 +709,7 @@ li.news:hover,
 
 .animation_title {
   font-family: "Flexo-Regular", Arial, sans-serif;
-  padding-bottom: 0;
+  padding-bottom: 16px;
   padding-top: 40px;
   color: #919191;
 }
@@ -720,6 +720,76 @@ li.news:hover,
 
 .expansion_card img {
   padding: 10px 0;
+}
+.pokedox_label_inner,
+.pokedox_label {
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #fff;
+  font-family: "Flexo-Regular", arial, sans-serif;
+  background-color: #313131;
+  background-image: none;
+  width: 100%;
+}
+
+.pokedox_label_inner_left {
+  width: 50%;
+  margin-top: 32px;
+}
+.pokedox_label_inner_left label {
+  font-size: 26.8px;
+  margin-top: 32px;
+}
+.pokedox_label_search {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding-top: 13px;
+  margin-bottom: 15px;
+  height: 48px;
+}
+.pokedox_label_search_input {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+.pokedox_label_search_input input {
+  border: 3px solid #616161;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.pokedox_label_search_icon {
+  font-size: 20px;
+  background-color: #ee6b2f;
+  padding: 14px 20px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.pokedox_label_inner_left p {
+  margin-bottom: 24px;
+}
+
+.pokedox_label_inner_right {
+  width: 50%; 
+  margin-top: 32px;
+  /* display: flex; 
+  align-items: flex-start; h2 top pe rahe */
+}
+
+.pokedox_label_inner_right h2 {
+  background-color: #4dad5b; /* sirf h2 ka background */
+  padding: 15px 10px 23px 20px;
+  border-radius: 5px;
+  font-family: "Flexo-Medium", arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.pokedox_divider {
+  background-color: #616161;
+  background-image: none;
+  height: 50px;
+  width: 100%;
 }
 
 /* Footer Start  */
