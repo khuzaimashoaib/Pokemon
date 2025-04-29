@@ -923,6 +923,13 @@ li.news:hover,
   padding: 1px 20px;
   border-radius: 3px;
 }
+.load_more {
+  display: flex;
+  margin: 16px auto;
+  width: 20%;
+  padding: 12px 20px 10.8 20px;
+  justify-content: center;
+}
 
 /* Footer Start  */
 
