@@ -922,14 +922,20 @@ li.news:hover,
 }
 
 .abilities {
-  display: flex;
   gap: 3px;
-  font-size: 11px;
+  font-weight: 300;
+  align-items: center;
 }
 .abilities span {
-  padding: 1px 20px;
+  font-family: "Flexo-Regular", arial, sans-serif;
+  font-size: 14px;
+  padding: 1px 10px;
   border-radius: 3px;
 }
+ span.ability-label{
+  padding: 0px;
+}
+
 .load_more {
   display: flex;
   margin: 16px auto;
@@ -938,7 +944,18 @@ li.news:hover,
   justify-content: center;
 }
 
-/* Footer Start  */
+.events_section{
+  padding-top: 15px;
+}
+
+
+.event_card_img img {
+height: 142px;
+object-fit: contain;
+padding: 20px 0px 20px 0px;
+} 
+
+  /* Footer Start  */
 
 .global-footer {
   background: #1f1f1f;
