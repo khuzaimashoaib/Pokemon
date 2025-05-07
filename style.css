@@ -15,6 +15,12 @@ body {
 
 /* Header */
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .main_head_cont {
   height: 66px;
   /* position: fixed; */
@@ -786,7 +792,7 @@ li.news:hover,
   font-weight: 500;
 }
 .pokedox_divider {
-  position: relative;
+  /* position: relative; */
   background-color: #616161;
   background-image: none;
   height: 50px;
@@ -794,19 +800,20 @@ li.news:hover,
 }
 .pokedox_advance_search {
   width: 30%;
-  margin: 0 auto;
+  margin: 0 auto ;
   position: absolute;
   background-color: #616161;
   color: #fff;
   left: 0;
   right: 0;
-  bottom: -18px;
+  bottom: 215px;
   display: flex;
   align-items: baseline;
   justify-content: center;
   gap: 8px;
   border-radius: 0px 0px 5px 5px;
   padding-bottom: 5px;
+  z-index: 1;
 }
 
 .pokedox_advance_search span {
